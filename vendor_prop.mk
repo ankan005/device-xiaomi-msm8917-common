@@ -22,6 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.video=true \
     persist.audio.dirac.speaker=true \
     persist.vendor.audio.fluence.voicecall=true \
+    persist.audio.dirac.speaker=true \
     persist.vendor.audio.fluence.speaker=false \
     persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.speaker.prot.enable=false \
