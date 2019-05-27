@@ -180,6 +180,9 @@ TARGET_USES_OLD_MNC_FORMAT := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-03-01
 
+# SD Clang
+TARGET_USE_SDCLANG := true
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
