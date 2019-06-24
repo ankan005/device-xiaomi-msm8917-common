@@ -80,10 +80,26 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opengles.version=196608 \
-    ro.vendor.display.cabl=2 \
-    ro.sf.lcd_density=295 \
-    vendor.display.enable_default_color_mode=1
+ro.opengles.version=196608 \
+ro.sf.lcd_density=320 \
+debug.sf.disable_hwc_vds=1 \
+debug.sf.hw=0 \
+debug.sf.latch_unsignaled=1 \
+debug.egl.hw=0 \
+persist.hwc.mdpcomp.enable=true \
+debug.mdpcomp.logs=0 \
+dev.pm.dyn_samplingrate=1 \
+persist.demo.hdmirotationlock=false \
+debug.enable.sglscale=1 \
+debug.sf.recomputecrop=0 \
+sdm.debug.disable_skip_validate=1 \
+vendor.display.disable_skip_validate=1 \
+persist.debug.wfd.enable=1 \
+persist.hwc.enable_vds=1 \
+debug.hwui.use_buffer_age=false \
+sdm.debug.disable_rotator_split=1 \
+sdm.perf_hint_window=50 \
+debug.sdm.support_writeback=0
 
 # Fm
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -180,3 +196,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.use_fifo_ui=1
+
+# Tweak the memory management of the device, enable more background apps.. et cetera..
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
