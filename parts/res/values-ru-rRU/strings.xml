@@ -56,4 +56,9 @@
     <string name="dirac_preset_country">Кантри</string>
     <string name="dirac_preset_dance">Танцевальная</string>
     <string name="dirac_preset_metal">Металл</string>
+<<<<<<< HEAD
+=======
+     <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Dirac звук</string>
+>>>>>>> f277bad... rolex: Add dirac support
 </resources>

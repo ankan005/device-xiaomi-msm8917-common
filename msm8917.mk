@@ -43,10 +43,6 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# Ambient display
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
@@ -106,6 +102,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
+
+# Device-specific Settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Display
 PRODUCT_PACKAGES += \
