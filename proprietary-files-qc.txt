@@ -47,9 +47,10 @@ vendor/lib64/soundfx/libqcbassboost.so|fab0dcaedb029e1045ec1d03767fa10ad636307d
 vendor/lib64/soundfx/libqcvirt.so|c02d70d2405d4405d6d246b18fac5d2fde291692
 
 # Audio dirac - from xiaomi
-vendor/lib/soundfx/libdirac.so
-vendor/lib/libDiracAPI_SHARED.so
-vendor/etc/diracmobile.config
+vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+vendor/etc/diracvdd.bin
 
 # Bluetooth - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|9178856dc8651b499d1b155825b6115a486ee05e
