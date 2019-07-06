@@ -97,7 +97,7 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
 # Charger
-include device/xiaomi/rolex/rootdir/charger/charger.mk
+include device/xiaomi/msm8937/rootdir/charger/charger.mk
 
 # Consumerir HIDL
 PRODUCT_PACKAGES += \
