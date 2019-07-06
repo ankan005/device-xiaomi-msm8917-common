@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017-2019 The LineageOS Project
@@ -97,7 +98,7 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
 # Charger
-include device/xiaomi/msm8937/rootdir/charger/charger.mk
+include device/xiaomi/msm8917-common/rootdir/charger/charger.mk
 
 # Consumerir HIDL
 PRODUCT_PACKAGES += \
