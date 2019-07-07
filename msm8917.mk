@@ -44,6 +44,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
+#sound
+SOUNDPICKER_10 := true
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
