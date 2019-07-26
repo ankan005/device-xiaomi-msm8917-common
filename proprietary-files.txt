@@ -1704,7 +1704,7 @@ vendor/lib/libchromatix_sony_imx486_ii_snapshot.so|1e4b2251a7265db043a27565158ac
 vendor/lib/libchromatix_sony_imx486_ii_zsl_preview_dw9714v.so|83c27db81fc6824ece5d8bfafc4195401dee22cf
 vendor/lib/libchromatix_sony_imx486_ii_zsl_video_dw9714v.so|f4f5cbec6223052e9ec6f8cca8a17705f942e25c
 
-# Camera mmcamera - from riva - V9.2.4.0.NCKMIEK
+# Camera mmcamera - from rolex - V9.2.4.0.NCKMIEK
 lib/libmmcamera_interface.so:vendor/lib/libmmcamera_interface.so|d63ae6b5174a23a97e5f78691cc22b71d91d5c49
 vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so|4d133b9cb89ed8f81099320d704298da1ec832bb
 vendor/lib/libmmcamera_cac3_lib.so|458068eed50c464d3b9a28a0ced04af5acc6cc41
@@ -1901,9 +1901,15 @@ vendor/firmware/cpp_firmware_v1_12_0.fw:vendor/firmware/cpp_firmware_v1_12_0.fw|
 vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so|b2e014de968f65e013b4dae3fad67f16aa3b0a09
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so|bed46204c8200d5f0ec1b37c14ecbc06f424db93
 
+# Dirac - from Xiaomi
+vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+
 # Display calibration
-vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3b.xml
-vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3b.xml
+vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3a.xml:vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3a.xml
+vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3a.xml:vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3a.xml
+vendor/etc/qdcm_calib_data_nt35521s_HD720p_video_EBBG_c3a.xml:vendor/etc/qdcm_calib_data_nt35521s_HD720p_video_EBBG_c3a.xml
 
 # Graphics firmware - from riva OPM1.171019.026 - 8.11.6
 vendor/firmware/a300_pfp.fw:vendor/firmware/a300_pfp.fw|899dbfad4812084971cfc1ff30f06a4b45c2d34c
