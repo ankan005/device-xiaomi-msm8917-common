@@ -215,4 +215,6 @@ ro.config.sdha_apps_bg_min=8
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.image-dex2oat-filter=speed
 
-
+# Enforce privapp-permissions whitelist
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=enforce
