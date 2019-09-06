@@ -40,11 +40,13 @@ PRODUCT_AAPT_PREBUILT_DPI := hdpi
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
-export export HAVOC_BUILD_TYPE=Official
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
+
+# Board
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msm8937
 
 #sound
 SOUNDPICKER_10 := true
@@ -158,22 +160,22 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service
 
 # GPS
-PRODUCT_PACKAGES += \
-    libgnss \
-    libgnsspps \
-    libsensorndkbridge
+#PRODUCT_PACKAGES += \
+#    libgnss \
+#    libgnsspps \
+#    libsensorndkbridge
 
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl-qti \
-    android.hardware.gnss@1.0-service-qti
+#PRODUCT_PACKAGES += \
+#    android.hardware.gnss@1.0-impl-qti \
+#    android.hardware.gnss@1.0-service-qti
 
-PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
-    $(VENDOR_PATH)/gps/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
-    $(VENDOR_PATH)/gps/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
-    $(VENDOR_PATH)/gps/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
-    $(VENDOR_PATH)/gps/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
-    $(VENDOR_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
+#PRODUCT_COPY_FILES += \
+#    $(VENDOR_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+#    $(VENDOR_PATH)/gps/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+#   $(VENDOR_PATH)/gps/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+#    $(VENDOR_PATH)/gps/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+#    $(VENDOR_PATH)/gps/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
+#    $(VENDOR_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
 # Healthd
 PRODUCT_PACKAGES += \
@@ -350,11 +352,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
 # Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -378,8 +375,8 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service
 
 # VNDK-SP
-PRODUCT_PACKAGES += \
-    vndk-sp
+#PRODUCT_PACKAGES += \
+#    vndk-sp
 
 # WiFi
 PRODUCT_PACKAGES += \
